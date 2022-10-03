@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta author="Michael Thompson" timedate="2022-07-12">
+<meta name="keywords" content="alert, html, css, singer, song, pop culture">
+<title>Buttons and Alert Practice</title>
+<style>
+.btnHi {
+background-color:#33ff33;
+}
+.btnNo {
+background-color:#ffff33;
+}
+.btnStop {
+background-color:#ff1a1a;
+}
+.btnGroup{
+background-color:rgb(215,215,215);
+border:.05em solid black;
+float:left;/* Float the buttons side by side */
+padding:.5em;
+width:100%;
+border-radius:2%;
+}
+button {
+font-weight:bold;
+font-size:1.5em;
+width:4em;
+height:auto;
+margin:1% 0;
+}
+.button2 {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+*{
+font-family:Arial, sanserif;
+}
+body{
+padding:5%;
+}
+button:hover{
+background-color:black;
+color:white;
+cursor: pointer;
+margin:auto;
+}
+h1, h2, figcaption {
+text-align:center;
+clear:left;
+}
+figcaption {
+font-weight:bold;
+}
+img {border:.15em dotted gray;}
+p {float:left;}
+</style>
+</head>
+<body>
+
+<h1>Button Group, Alert Practice</h1>
+<details>
+<summary>About this Page</summary>
+<p>As you place your cursor over any button, the color will change to black and the font will turn white.</p>
+
+<p>Below are are simple dialog windows that open alerts.</p>
+
+</details>
+
+<h2>Guess the Song</h2>
+
+<div class="btnGroup">
+
+<figure>
+<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwNTI5NTY1NTE1MzkyMzYw/gettyimages-138868370.jpg" alt="Singer, Diana Ross." style="width:90%">
+<figcaption>Guess a Song by Diana Ross with the words:</figcaption>
+</figure>
+
+<button onclick="btnStop()" class="btnStop button2">Stop</button> 
+<script>
+function btnStop() {alert("Stop in the Name of Love");}
+</script>
+
+<button onclick="btnNo()" class="btnNo button2">No</button>
+<script>
+function btnNo() {alert ("Ain’t No Mountain High Enough");}
+</script>
+ 
+<button onclick="btnHi()" class="btnHi button2">Higher</button> 
+<script>
+function btnHi() {alert("Take Me Higher");}
+</script>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+

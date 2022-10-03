@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="description" content="Michael's demo page with a table, iframe, and form.">
+<meta name="keywords" content="house music,1990s,popular music, house party, invitation">
+
+<head>
+<title>Mike's House Party</title>
+<style>
+a:hover, #button:hover, #button2:hover, select:hover, input:hover {
+   background-color:rgb(205,205,25);
+}
+body {
+font-family:Calibri, sanserif;
+background-color:rgb(10,140,15);
+margin:10%;
+}
+#button {
+background-color:rgb(10,215,15);
+margin:1em;
+text-align:center;
+font-family:cursive;
+padding:.4em;
+border-radius:3em;
+font-size:2.5em;
+}
+caption {
+font-size:3em;
+}
+input {
+width:60%;
+font-family:Calibri, sanserif;
+font-size:1.5em;
+}
+table {
+    width:100%;
+}
+Table, th, td {
+Border:0.1em solid rgb(115,10,115);
+font-size:1.1em;
+}
+td, caption {
+background-color:rgb(245,215,245);
+font-weight:bold;
+color:rgb(15,15,15);
+padding:1em;
+}
+th {
+text-align:left;
+background-color:rgb(245,245,115);
+padding:.3em;
+align:center;
+width:70%
+margin:auto;
+}
+option value {
+color:rgb(250,250,250);
+font-weight:bold;
+font-family:Calibri, sanserif;
+}
+li.current-page {
+outline:rgb(120,20,45) dotted 2px;
+width:40%;
+padding:.25em;
+}
+.skip {
+       position: absolute;
+       left: -999em;
+       width: 990em;
+display:none;   
+}
+#button2 {
+background-color:rgb(10,215,15);
+font-size:1.2em;
+font-family:cursive;
+width:90%;
+}
+#form {
+background-color:rgb(45,75,45);
+color:rgb(245,215,245);
+outline:.5em solid rgb(245,215,245);
+margin:3em;
+text-align:center;
+font-family:cursive;
+font-size:1.1em;
+padding:.4em;
+border-radius: 2em;
+width:80%;
+}
+#heading1, #heading2 {
+font-weight:bold;
+font-size:4.5em;
+color:rgb(255,255,255);
+text-align:center;
+padding:.25em;
+}
+#food, #artist, #address {
+font-size:1.2em;
+font-family:cursive;
+}
+#footer {
+float:center;
+}
+</style>
+
+</head>
+<body>
+
+<div role="heading" aria-level="1" id="heading1">Come to Mike's HOUSE Party!</div>
+<main id="main">
+
+<iframe src="https://www.youtube.com/embed/_KztNIg4cvE" height="100%" width="100%" title="Crystal Waters, Gypsy Woman, 1991" style="border:2em padding:1em">
+</iframe>
+
+<a href="#form" class="skip">Skip to form</a>
+<a href="#contentinfo" class="skip">Skip to footer</a>
+
+<table role="table">
+<caption>Throwback to 1990s' House Music</caption>
+<tr role="columnheader">
+ <th scope="col">Featured Artist</th>
+ <th scope="col">Song</th>
+ <th scope="col">Year</th>
+</tr>
+<tr>
+ <th role="rowheader">Frankie Knuckles</th>
+ <td><a href="https://youtu.be/QIdimVDuSEU">Whistle Song</a></td>
+ <td>1990</td>
+</tr>
+<tr>
+ <th role="rowheader">Desiya</th>
+ <td><a href="https://youtu.be/2hdN3XuHeeU">Comin' On Strong</a></td>
+ <td>1991</td>
+</tr>
+<tr>
+ <th role="rowheader">Marc Anthony</th>
+ <td><a href="https://youtu.be/3FJJdb19TUM">Ride on the Rhythm</a></td>
+ <td>1992</td>
+</tr>
+</table>
+
+<img src="https://th.bing.com/th/id/R.9ccbd4cc3ce369029dfc29c27c839609?rik=fP4PEUWDypcr1Q&pid=ImgRaw&r=0" alt="" margin="auto" width="100%">
+
+
+<div id="form">
+<div role="heading" aria-label="2" style="font-size:2em">Come Here or Be Square!</div>
+<div id="address">
+<time datetime="2022-06-25 20:00">June 25, 2022 starting at 8PM</time>
+<address>555 Mockingbird Street, NYC 00555</address><br>
+</div>
+
+<div>
+<form style="margin:1em">
+<label for="fName">First Name</label>
+<input type="text" id="fName" name="fname" value="Robin"><br>
+
+<label for="lName">Last Name</label>
+<input type="text" id="lName" name="lName" value="S"><br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" value="Robin_S@domain.org"><br>
+
+<!--input type="submit" role="button" style="width:40%" id="button" value="I'm IN!"><br>
+<input type="submit" role="button" style="width:40%" id="button2" value="Next time?"-->
+
+<button type="button" role="button" role="button" style="width:50%" id="button">Yes, I'm <strong>IN!</strong></button><br>
+<button type="button" role="button" role="button" style="width:50%" id="button">Maybe next time?</button><br>
+
+
+</form>
+</div>
+</div>
+
+</form>
+
+<div role="heading" aria-label="2" id="heading2" style="float:center position:fixed"><em>Before you go...</em></div>
+
+<div role="contentinfo" id="footer">
+
+<!--label for="food"></label-->
+<select name="food" id="food" aria-labelledby="suggest a food">
+<option value="suggestFood">Suggest a food</option> 
+ <option value="turkeySliders">Turkey sliders</option> 
+ <option value="cheeseCrackers">Cheese &amp; crackers</option>
+  <option value="pizza">Pizza</option>
+</select>
+<!--input type="submit" role="button" style="font-size:1.5em; width:40%" id="button" value="Feed me!"><br-->
+
+<button type="button" role="button" role="button" style="width:50%" id="button">Serve this </button><br>
+
+<!--label for="artist"></label-->
+<select name="artist" id="artist" aria-labelledby="suggest an artist">
+<option value="suggestArtist">Suggest an artist</option> 
+ <option value="Adeva">Adeva</option>
+  <option value="thoseGuys">Those Guys</option>
+  <option value="julietRoberts">Juliet Roberts</option>
+</select>
+<!--input type="submit" role="button" style="font-size:1.5em; width:40%" id="button" value="Play this!"-->
+
+<button type="button" role="button" role="button" style="width:50%" id="button">Play this</button><br>
+
+
+</div>
+
+</html>
