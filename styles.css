@@ -1,0 +1,16 @@
+
+main {
+    background-color: yellow;
+    color: maroon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:2em, 2em, 20em, 2em;
+}
+img {
+    height:20%; 
+    width:20%
+}
+footer {
+    background-color: maroon;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
